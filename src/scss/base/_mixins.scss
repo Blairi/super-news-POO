@@ -26,6 +26,7 @@
     display: $display;
     border: none;
     font-size: 2rem;
+    transition: all 0.3s ease-out;
 
     &:hover{
         background-color: darken($bgcolor, 5);

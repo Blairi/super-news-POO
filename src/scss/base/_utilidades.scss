@@ -3,8 +3,12 @@
     justify-content: flex-end;
 }
 .centrar-seccion{
-    width: 50%;
     margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    @include tablet{
+        width: 50%;
+    }
 }
 .padding-seccion{
     padding: 2rem 0;
@@ -19,4 +23,17 @@
 .brand{
     display: flex;
     align-items: center;
+}
+.p-top{
+    padding-top: 3rem;
+}
+.info-image{
+    @include tablet{
+        @include grid(2, 1rem);
+    }
+}
+.fill-display{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }

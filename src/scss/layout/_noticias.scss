@@ -11,6 +11,7 @@
     margin: 2rem 0;
     -webkit-box-shadow: -1px 11px 25px -1px rgba(0,0,0,0.43); 
     box-shadow: -1px 11px 25px -1px rgba(0,0,0,0.43);
+    transition: all 0.3s ease-out;
     @include tablet{
         margin: 0;
     }
@@ -26,6 +27,9 @@
     }
     a{
         color: $blanco;
+    }
+    &:hover{
+        transform: scale(105%);
     }
 }
 .noticia-info{

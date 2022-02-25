@@ -1,0 +1,36 @@
+.paises{
+    @include tablet{
+        @include grid(2, 2rem);
+    }
+    @include desktop{
+        @include grid(3, 2rem);
+    }
+    .pais{
+        -webkit-box-shadow: -1px 17px 27px 4px rgba(0,0,0,0.2); 
+        box-shadow: -1px 17px 27px 4px rgba(0,0,0,0.2);
+        padding: 1rem 3rem 3rem 3rem;
+        margin: 4rem 0;
+        transition: all 0.3s ease-out;
+        &:hover{
+            transform: scale(105%);
+        }
+        @include tablet{
+            margin: 0;
+        }
+        .thumb{
+            @include tablet{
+                height: 29rem;
+            }
+            img{
+                @include tablet{
+                    height: 29rem;
+                }
+                object-fit: cover;   
+                object-position: center center;
+            }
+        }
+        p{
+            font-size: 3rem;
+        }
+    }
+}

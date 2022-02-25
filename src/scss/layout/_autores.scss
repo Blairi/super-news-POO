@@ -1,0 +1,39 @@
+.autores{
+    @include tablet{
+        @include grid(3, 1rem);
+    }
+    @include desktop{
+        @include grid(4, 1rem);
+    }
+    .autor{
+        padding: 1rem 3rem;
+        margin-bottom: 2rem;
+        -webkit-box-shadow: -1px 17px 27px 4px rgba(0,0,0,0.2); 
+        box-shadow: -1px 17px 27px 4px rgba(0,0,0,0.2);
+        transition: all 0.3s ease-out;
+        &:hover{
+            transform: scale(105%);
+        }
+        .nombre{
+            color: $azul_principal;
+        }
+    }
+}
+.perfil{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: .5rem;
+    place-items: center;
+    .thumb{
+        height: 6rem;
+        border-radius: 50%;
+        overflow: hidden;
+        -webkit-box-shadow: -1px 17px 27px 4px rgba(0,0,0,0.2); 
+        box-shadow: -1px 17px 27px 4px rgba(0,0,0,0.2);
+        img{
+            height: 6rem;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }   
+}
