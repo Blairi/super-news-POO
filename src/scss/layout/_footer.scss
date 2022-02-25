@@ -1,0 +1,29 @@
+.footer-principal{
+    background-color: $gris_oscuro;
+    margin: 0;
+    padding: 3rem 0;
+    .contenedor{
+        @include tablet{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+    }
+    h2{
+        margin: 0;
+        display: inline;
+        color: $blanco;
+    }
+    a{
+        color: $blanco;
+    }
+    li{
+        margin: 2rem 0;
+    }
+    p{
+        color: $blanco;
+        text-align: center;
+        a{
+            color: $azul_principal;
+        }
+    }
+}

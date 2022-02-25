@@ -1,0 +1,19 @@
+{
+    "name": "axela/super-news",
+    "description": "App Web para crear y publicar noticias o notas",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Axel Montiel",
+            "email": "axel.avi.fer@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./classes"
+        }
+    }
+}

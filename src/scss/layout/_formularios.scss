@@ -1,0 +1,21 @@
+.formulario{
+    label{
+        display: block;
+        margin: 2rem 0;
+    }
+    textarea,
+    input:not([type="submit"]){
+        border: none;
+        border-bottom: .4rem solid $azul_principal;
+        padding: 1.5rem 1rem 1rem 1rem;
+        resize: none;
+        outline: none;
+        width: 100%;
+    }
+    select{
+        display: block;
+    }
+    textarea{
+        height: 10rem;
+    }
+}

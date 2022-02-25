@@ -1,0 +1,22 @@
+.alinear-derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+.centrar-seccion{
+    width: 50%;
+    margin: 0 auto;
+}
+.padding-seccion{
+    padding: 2rem 0;
+}
+.title{
+    color: $azul_fuerte;
+    text-align: center;
+}
+.centrar-texto{
+    justify-content: center;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}

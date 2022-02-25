@@ -1,0 +1,47 @@
+.navegacion-principal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: $azul_fuerte;
+    padding: 1.2rem 0;
+    -webkit-box-shadow: 0px 20px 25px -9px rgba(0,0,0,0.4); 
+    box-shadow: 0px 20px 25px -9px rgba(0,0,0,0.4);
+    h2{
+        margin: 0;
+        color: $blanco;
+    }
+    a{
+        color: $blanco;
+    }
+    .contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.navegacion-botones{
+    display: flex;
+    li{
+        margin: 0 .5rem;
+        @include tablet{
+            margin: 0 2rem;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.top-button{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    padding: 2rem 2.4rem;
+    margin: 0 2rem 2rem 0;
+    color: $blanco;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: $azul_principal;
+}
